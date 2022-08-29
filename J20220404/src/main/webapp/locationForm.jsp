@@ -69,45 +69,13 @@
 		<!-- ajax를 써서 이거 바꾸자. 굳이? -->
 		<div class="container_loc">
 			<c:if test="${totCnt > 0 }">
-				<%-- <c:forEach var="sports" items="${list }"> --%>
-				<div class="center">
-					<%-- <c:choose>
-						<c:when test="${list.pictureurl != null }">
-							<img src="<%=context %>/images/${list.pictureurl }"
-								class="sportsImage">
-						</c:when>
-						<c:otherwise>
-							<img class="nonSportsImage" src="./images/null.gif">
-						</c:otherwise>
-					</c:choose> --%>
+				<div class="center">		 
 					<div class="context">
-						<%-- <div class="checkcnt">
-			            	<input type="hidden" id="user_id" value="${user_id }">
-			                <input type="hidden" id="sport_type" value="${list.sport_type }">
-			                <button class="likebtn" onclick="likecheck(this.value)" value="${list.exnum }">
-			                <c:choose>
-			                	<c:when test="${list.check > 0 }">
-			               			<img id="imgcheck" src="./images/star.png" >
-			               		</c:when>
-			               		<c:otherwise>
-			              			<img id="imgcheck" src="./images/empty_star.png">
-			              		</c:otherwise>
-			              	</c:choose>
-			               	</button>
-			               	<span id="likecnt">${list.checkcnt }</span><span>명이 좋아합니다.</span>
-			            </div> --%>
 						<p>
-						<div id="exname"></div>
-							<%-- ${list.exname }<br> 
-							위치 : ${list.loc }<br> 
-							전화번호: ${list.tel }<br> 
-							영업시간 : ${list.time }<br>
-							소개 <br> 
-							${list.excontext } <br>
-							<a href="${list.homeurl }">사이트로 연결</a> --%>
+						<div id="exname"></div>		 
 					</div>
 				</div>
-				<%-- </c:forEach> --%>
+				 
 			</c:if>
 			<c:if test="${totCnt == 0}">
   		  		센터가 없넹
